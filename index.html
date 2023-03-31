@@ -4,39 +4,40 @@
 <head>
     <title>Search</title>
     <link rel="shortcut icon" href="google.png" type="image/x-icon">
-    <link href="style.css" rel="stylesheet">
+    <link href="styleSheet.css" rel="stylesheet">
 </head>
 
 <body>
-    <center>
-        <header id="head">
-            <div id="links">
-                <div id="item1">
-                    <a href="advancedSearch.html">Advanced</a>
-                </div>
-                <div>
-                    <a href="imageSearch.html">Images</a>
-                </div>
+    <header>
+        <div class="links">
+            <div>
+                <a href="imageSearch.html">Images</a>
             </div>
-        </header>
-
-        <div id="mainSection">
-            <div id="google-logo">
-                <img src="googleImage.png" alt="Google Logo">
+            <div>
+                <a href="advancedSearch.html">Advanced</a>
             </div>
+        </div>
+    </header>
 
+    <div class="mainSection">
+        <div class="google-logo">
+            <img src="googleImage.png" alt="Google Logo">
+        </div>
+        <div>
             <form action="https://google.com/search">
-                <div id="inputField">
-                    <img src="search.png" alt="search" id="search-icon">
-                    <input type="text" name="q">
-                </div>
-                <div id="button">
-                    <input type="submit" value="Google Search" id="search_button">
-                    <input type="submit" value="I'm Feeling Lucky" name="btnI" id="lucky_button">
+                <div class="input">
+                    <div class="inputField">
+                        <img src="search.png" alt="search" id="search-icon" width="12px" height="12px">
+                        <input type="text" name="q">
+                    </div>
+                    <div class="btContainer">
+                        <input type="submit" value="Google Search" class="search_button">
+                        <input type="submit" value="I'm Feeling Lucky" name="btnI" class="search_button">
+                    </div>
                 </div>
             </form>
         </div>
-    </center>
+    </div>
 </body>
 
 </html>

@@ -7,39 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Search</title>
     <link rel="shortcut icon" href="google.png" type="image/x-icon">
-    <link href="style.css" rel="stylesheet">
+    <link href="styleSheet.css" rel="stylesheet">
 </head>
 
 <body>
-    <center>
-        <header id="head">
-            <div id="links">
-                <div id="item1">
-                    <a href="index.html">Google</a>
-                </div>
-                <div>
-                    <a href="advancedSearch.html">Advanced</a>
-                </div>
+    <header>
+        <div class="links">
+            <div>
+                <a href="index.html">Google</a>
             </div>
-        </header>
+            <div>
+                <a href="advancedSearch.html">Advanced</a>
+            </div>
+        </div>
+    </header>
 
-        <div id="mainSection">
-            <div id="google-logo">
-                <img src="googleImage.png" width="250px
+    <div class="mainSection">
+        <div class="google-logo">
+            <img src="googleImage.png" width="250px
                 " alt="Google Logo">
-            </div>
-
+        </div>
+        <div>
             <form action="https://google.com/images">
-                <div id="inputField">
-                    <input type="text" name="q" id="searchbar">
-                </div>
-                <div>
-                    <input type="submit" value="Image Search" id="search_button">
+                <div class="input">
+                    <div class="inputField">
+                        <input type="text" name="q" id="searchbar">
+                    </div>
+                    <div class="btContainer">
+                        <input type="submit" value="Image Search" id="search_button">
+                    </div>
                 </div>
             </form>
         </div>
-    </center>
-
+    </div>
 </body>
 
 </html>
