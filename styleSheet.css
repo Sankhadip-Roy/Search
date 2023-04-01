@@ -1,5 +1,6 @@
 * {
     font-family: arial, sans-serif;
+    box-sizing: border-box;
 }
 
 .links {
@@ -137,13 +138,42 @@ input[type=submit]:hover {
     visibility: visible;
 }
 
+.googleLogo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+    height: 92px;
+    aspect-ratio: auto 272 / 92;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
 @media (orientation: portrait) {
+    * {
+        font-size: 1.5rem;
+    }
+
     .inputField {
         height: calc(41px - 1vh);
     }
 
     .googleLogo {
-        width: 33vw;
-        height: 13vw;
+        width: 30vw;
+        height: 10vw;
+    }
+
+    .searchIcon {
+        height: 15px;
+        width: 15px;
+        margin-top: 0px;
+        margin-left: 7px;
+        margin-bottom: 7px;
+        /* margin-: 0px;
+        margin-left: calc(0.55em-1vh); */
+
+        /* line-height: calc(20px-1vh); */
+
     }
 }
