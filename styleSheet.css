@@ -35,7 +35,7 @@ a:hover {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
+    gap: 10px;
 }
 
 .inputField {
@@ -53,6 +53,24 @@ a:hover {
         0 0 0 3px rgb(240, 237, 237);
 }
 
+.searchIcon {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    margin-top: 3px;
+    color: #9aa0a6;
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    position: relative;
+    width: 24px;
+}
+
 input[type=text] {
     background-color: transparent;
     width: 90%;
@@ -65,7 +83,19 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-    border: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+    padding: 0 16px;
+    margin: 11px 4px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    user-select: none;
+    font-size: 14px;
 }
 
 input[type=submit]:hover {
