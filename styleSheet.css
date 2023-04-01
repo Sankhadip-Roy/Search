@@ -36,6 +36,12 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    color: #202124;
+
 }
 
 .inputField {
@@ -53,8 +59,9 @@ a:hover {
         0 0 0 3px rgb(240, 237, 237);
 }
 
+/* inspected */
 .searchIcon {
-    display: block;
+    display: inline-block;
     height: 100%;
     width: 100%;
     overflow-clip-margin: content-box;
@@ -64,7 +71,6 @@ a:hover {
     width: 20px;
     margin-top: 3px;
     color: #9aa0a6;
-    display: inline-block;
     fill: currentColor;
     height: 24px;
     position: relative;
@@ -73,9 +79,21 @@ a:hover {
 
 input[type=text] {
     background-color: transparent;
-    width: 90%;
     border: none;
+    width: 90%;
     font-size: 1.2em;
+
+    /* margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -37px;
+    height: 34px;
+    font-size: 16px;
+    flex: 100%; */
 }
 
 input[type=text]:focus {
@@ -83,17 +101,18 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-    background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
-    border-radius: 4px;
-    color: #3c4043;
     cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+
+    background-color: #f8f9fa;
+    color: #3c4043;
     padding: 0 16px;
     margin: 11px 4px;
     line-height: 27px;
     height: 36px;
     min-width: 54px;
-    text-align: center;
     user-select: none;
     font-size: 14px;
 }
@@ -101,4 +120,25 @@ input[type=submit] {
 input[type=submit]:hover {
     box-shadow: 0 0 0 1px rgb(216, 213, 213),
         0 0 0 0.5px rgb(194, 192, 192);
+}
+
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
