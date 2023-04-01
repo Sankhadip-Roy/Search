@@ -9,10 +9,10 @@
 }
 
 a {
-    margin-top: 8px;
     text-decoration: none;
     color: black;
     font-size: small;
+    margin-top: 8px;
 }
 
 a:hover {
@@ -20,35 +20,31 @@ a:hover {
 }
 
 .mainSection {
-    margin-top: 7vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 3vh;
+    margin-top: 7vh;
 }
 
 .input {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    flex: 1;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
     color: #202124;
-
 }
 
 .inputField {
     border: 1px solid #cdcdcd;
     border-radius: 50px;
     width: 50vw;
-    height: 7vh;
+    height: 41px;
 }
 
 .inputField:hover {
@@ -62,35 +58,33 @@ a:hover {
 /* inspected */
 .searchIcon {
     display: inline-block;
-    height: 100%;
-    width: 100%;
+    height: 1em;
+    width: 1em;
+    margin-top: 0.75em;
+    margin-left: 0.55em;
+
     overflow-clip-margin: content-box;
     overflow: hidden;
-    height: 20px;
     line-height: 20px;
-    width: 20px;
-    margin-top: 3px;
     color: #9aa0a6;
     fill: currentColor;
-    height: 24px;
     position: relative;
-    width: 24px;
 }
 
 input[type=text] {
     background-color: transparent;
     border: none;
-    width: 90%;
+    width: 75%;
     font-size: 1.2em;
-
-    /* margin: 0;
+    margin-top: -37px;
+    /* 
+    margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, .87);
     word-wrap: break-word;
     outline: none;
     display: flex;
     -webkit-tap-highlight-color: transparent;
-    margin-top: -37px;
     height: 34px;
     font-size: 16px;
     flex: 100%; */
@@ -141,4 +135,15 @@ input[type=submit]:hover {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+@media (orientation: portrait) {
+    .inputField {
+        height: calc(41px - 1vh);
+    }
+
+    .googleLogo {
+        width: 33vw;
+        height: 13vw;
+    }
 }
