@@ -24,22 +24,29 @@
             </div>
         </div>
     </header>
-    <p id="advancedSearch">Advanced Search</p>
-    <hr>
-    <p id="findPagesWith">Find pages with...</p><br>
+    <p id="advancedSearch" class="adSrMargin">Advanced Search</p>
+    <hr id="hr1">
+    <p id="findPagesWith" class="adSrMargin">Find pages with...</p>
     <form action="https://google.com//search">
-        <label for="all_these_words">all these words:</label>
-        <input type="text" id="all_these_words" name="as_q">
-        <br>
-        <label for="this_exact_word">this exact words or phrase:</label>
-        <input type="text" id="this_exact_word" name="as_epq">
-        <br>
-        <label for="any_of_these_word">any of these word:</label>
-        <input type="text" id="any_of_these_word" name="as_oq">
-        <br>
-        <label for="none_of_these_word">none of these words:</label>
-        <input type="text" id="none_of_these_word" name="as_eq">
-        <div id="submitbtn">
+        <div id="allAdSrBox">
+            <div>
+                <label for="all_these_words" class="adSrMargin">all these words:</label>
+                <input type="text" id="textBox1" name="as_q">
+            </div>
+            <div>
+                <label for="this_exact_word" class="adSrMargin">this exact words or phrase:</label>
+                <input type="text" id="textBox2" name="as_epq">
+            </div>
+            <div>
+                <label for="any_of_these_word" class="adSrMargin">any of these word:</label>
+                <input type="text" id="textBox3" name="as_oq">
+            </div>
+            <div>
+                <label for="none_of_these_word" class="adSrMargin">none of these words:</label>
+                <input type="text" id="textBox4" name="as_eq">
+            </div>
+        </div>
+        <div id="btContainerAd">
             <input type="submit" value="Advanced Search">
         </div>
     </form>
