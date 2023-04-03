@@ -72,7 +72,7 @@ a:hover {
     position: relative;
 }
 
-input[type=text] {
+.inputField input[type=text] {
     background-color: transparent;
     border: none;
     width: 75%;
@@ -91,11 +91,11 @@ input[type=text] {
     flex: 100%; */
 }
 
-input[type=text]:focus {
+.inputField input[type=text]:focus {
     outline: none;
 }
 
-input[type=submit] {
+.btContainer input[type=submit] {
     border: 1px solid #f8f9fa;
     cursor: pointer;
     border-radius: 4px;
@@ -112,7 +112,7 @@ input[type=submit] {
     font-size: 14px;
 }
 
-input[type=submit]:hover {
+.btContainer input[type=submit]:hover {
     box-shadow: 0 0 0 1px rgb(216, 213, 213),
         0 0 0 0.5px rgb(194, 192, 192);
 }
@@ -148,6 +148,30 @@ input[type=submit]:hover {
     aspect-ratio: auto 272 / 92;
     overflow-clip-margin: content-box;
     overflow: clip;
+}
+
+.googleLogoAdvanced {
+    height: 24px;
+    width: 74px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#advancedSearch {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+#findPagesWith {
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    min-width: 167px;
+    min-height: 42px;
+    float: left;
+    margin-left: 25px;
 }
 
 @media (orientation: portrait) {

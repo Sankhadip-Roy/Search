@@ -11,11 +11,37 @@
 </head>
 
 <body>
-    <form action="https://google.com/search">
-        <input type="text" name="as_q" id="searchbar"><br>
-        <input type="text" name="as_epq" id="searchbar"><br>
-        <input type="text" name="as_oq" id="searchbar"><br>
-        <input type="text" name="as_eq" id="searchbar">
+    <header>
+        <div class="links">
+            <div class="googleAdvanced">
+                <img class="googleLogoAdvanced" src="googleImage.png" alt="Google Logo">
+            </div>
+            <div>
+                <a href="index.html">Google</a>
+            </div>
+            <div>
+                <a href="imageSearch.html">Images</a>
+            </div>
+        </div>
+    </header>
+    <p id="advancedSearch">Advanced Search</p>
+    <hr>
+    <p id="findPagesWith">Find pages with...</p><br>
+    <form action="https://google.com//search">
+        <label for="all_these_words">all these words:</label>
+        <input type="text" id="all_these_words" name="as_q">
+        <br>
+        <label for="this_exact_word">this exact words or phrase:</label>
+        <input type="text" id="this_exact_word" name="as_epq">
+        <br>
+        <label for="any_of_these_word">any of these word:</label>
+        <input type="text" id="any_of_these_word" name="as_oq">
+        <br>
+        <label for="none_of_these_word">none of these words:</label>
+        <input type="text" id="none_of_these_word" name="as_eq">
+        <div id="submitbtn">
+            <input type="submit" value="Advanced Search">
+        </div>
     </form>
 
 </body>
